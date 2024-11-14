@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShipUp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header>
+      <nav class="header-container">
+        <h1>Ship<span class="logo_orange">UP</span></h1>
+        <ul class="nav-links">
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="#">News And Media</a></li>
+        </ul>
+        <div class="btns">
+          <button class="request">Request Quote</button>
+          <button class="join">Join Now</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="container-first-section">
+          <article>
+            <h2>
+              Quick & Reliable
+              <span class="title-another-color">Warehousing and Logistics</span>
+              Solution.
+            </h2>
+            <p class="p-of-section">
+              ShipUp delivers an unparalleled customer service through dedicated
+              customer teams, engaged people working in an agile culture, and a
+              global footprint
+            </p>
+            <div class="container-btns">
+              <button class="join">Join Now</button>
+              <div class="border">
+                <figure>
+                  <img src="./assets/icons/video.svg" alt="" />
+                </figure>
+              </div>
+              <p>Play Demo</p>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <img
+                class="girl-with-dron"
+                src="./assets/images/girl-with-dron.svg"
+                alt=""
+              />
+            </figure>
+          </article>
+        </div>
+        <form action="/submit" method="post">
+          <fieldset>
+            <div class="origin">
+              <label class="origin-label">Origin</label>
+              <input type="text" name="origin-input" id="origin-input" />
+            </div>
+            <div class="destination">
+              <label class="destination-label">Destination</label>
+              <input
+                type="text"
+                name="destination-input"
+                id="destination-input"
+              />
+            </div>
+            <div class="weight">
+              <label class="weight-label"">Weight</label>
+              <input type="text" name="weight-input" id="weight-input" />
+
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
