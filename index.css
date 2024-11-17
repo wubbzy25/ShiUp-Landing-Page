@@ -31,6 +31,7 @@
 }
 
 .border-car {
+  position: fixed;
   z-index: 10;
   margin-left: 31.5%;
   margin-top: 2%;
@@ -42,6 +43,7 @@
   left: 20%;
 }
 .border-plane {
+  position: fixed;
   position: absolute;
   top: -30px;
   left: 4%;
@@ -265,6 +267,19 @@ mobile
   .hamburguer-menu {
     display: flex;
     justify-content: space-between;
+  }
+  .circle {
+    display: none;
+  }
+  .border-boxes {
+    display: none;
+  }
+
+  .border-car {
+    display: none;
+  }
+  .border-plane {
+    display: none;
   }
 
   .header-container {
