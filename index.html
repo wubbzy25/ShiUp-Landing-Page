@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +29,7 @@
           <button class="request">Request Quote</button>
           <button class="join">Join Now</button>
         </div>
+        <span class="fa-solid fa-bars hamburguer-menu" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; font-size: 30px; color: black;"></span>
       </nav>
     </header>
     <main>
@@ -56,6 +58,11 @@
           </article>
           <article>
             <figure>
+              <div class="border">
+                <img src="./assets/icons/boxes.svg" alt="">
+              </div>
+            </figure>
+            <figure>
               <img
                 class="girl-with-dron"
                 src="./assets/images/girl-with-dron.svg"
@@ -64,24 +71,40 @@
             </figure>
           </article>
         </div>
-        <form action="/submit" method="post">
+        <form action="/submit" method="post" class="form">
           <fieldset>
-            <div class="origin">
-              <label class="origin-label">Origin</label>
-              <input type="text" name="origin-input" id="origin-input" />
-            </div>
-            <div class="destination">
-              <label class="destination-label">Destination</label>
-              <input
-                type="text"
-                name="destination-input"
-                id="destination-input"
-              />
-            </div>
-            <div class="weight">
-              <label class="weight-label"">Weight</label>
-              <input type="text" name="weight-input" id="weight-input" />
-
+            <div class="form-container">
+              <div class="origin">
+                <label class="origin-label">Origin</label>
+                <input 
+                type="text" 
+                name="origin-input" 
+                id="origin-input" 
+                placeholder="&#xf3c5;    Enter Location" 
+                style="font-family: 'Font Awesome 5 Free'; font-weight: 700;"
+                />
+              </div>
+              <div class="destination">
+                <label class="destination-label">Destination</label>
+                <input
+                  type="text"
+                  name="destination-input"
+                  id="destination-input"
+                  placeholder="&#xf3c5;    Enter Location"
+                  style="font-family: 'Font Awesome 5 Free'; font-weight: 700;"
+                />
+              </div>
+              <div class="weight">
+                <label class="weight-label"">Weight</label>
+                <input
+                 type="text" 
+                 name="weight-input" 
+                 id="weight-input" 
+                 placeholder="&#xf290;     Weight(KG)"
+                 style="font-family: 'Font Awesome 5 Free'; font-weight: 700;"
+                />
+              </div>
+                <button class="submit-button ">Check Price</button>    
             </div>
           </fieldset>
         </form>
