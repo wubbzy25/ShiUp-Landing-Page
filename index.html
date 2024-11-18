@@ -6,11 +6,8 @@
     <meta property="og:title" content="ShipUp">
     <meta property="og:description" content="ShipUp is a cutting-edge technology company specializing in warehousing and logistics.">
     <meta property="og:image" content="https://ibb.co/4jDpLzW">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ShipUp</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,8 +29,20 @@
           <button class="request">Request Quote</button>
           <button class="join">Join Now</button>
         </div>
-        <span class="fa-solid fa-bars hamburguer-menu" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; font-size: 30px; color: black;"></span>
+        <div class="hamburguer-menu">
+          <span class="fa-solid fa-bars" style="color: black; font-size:x-large;"><span/>
+        </div>
       </nav>
+      <div class="dropdown_menu">
+        <ul>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="#">News And Media</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="main-section">
@@ -65,7 +74,7 @@
                     <img class="boxes" src="./assets/icons/boxes.svg" alt="">
                   </div>
                 </figure>
-            <figure>
+            <figure class="image-container">
               <img
                 class="girl-with-dron"
                 src="./assets/images/girl-with-dron.svg"
@@ -84,7 +93,7 @@
                 name="origin-input" 
                 id="origin-input" 
                 placeholder="&#xf3c5;    Enter Location" 
-                style="font-family: 'Font Awesome 5 Free'; font-weight: 700;"
+                style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" 
                 />
               </div>
               <div class="destination">
@@ -123,5 +132,8 @@
         </div>
       </section>
     </main>
+    <script src="index.js">
+
+    </script>
   </body>
 </html>
