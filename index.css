@@ -186,11 +186,12 @@ body {
 .container-first-section .image-container {
   width: 45vw;
   max-width: 1000px;
-  min-width: 240px;
+  min-width: 400px;
   margin: auto;
 }
 
 .container-first-section .girl-with-dron {
+  object-fit: cover;
   width: 100%;
 }
 .container-first-section h2 {
@@ -241,7 +242,6 @@ body {
   position: absolute;
   top: 13px;
   left: 12px;
-  vertical-align: top;
 }
 .container-first-section .container-btns p {
   color: var(--simblue);
@@ -250,9 +250,8 @@ body {
 }
 
 .form {
-  width: 100%;
-  justify-items: center;
-  align-items: center;
+  width: 90%;
+  margin: auto;
 }
 .form-container {
   display: flex;
@@ -268,23 +267,43 @@ body {
   position: relative;
   margin-bottom: 30px;
   margin-top: 10vw;
+  flex-wrap: wrap;
+}
+
+.form-container div {
+  flex: 1 1 calc(25% - 22px);
+  min-width: 200px;
 }
 
 .form-container input {
+  width: 100%;
   padding: 25px 40px;
   border: 1px, solid, #979797;
   border-radius: 12px;
+  flex-grow: 1;
+}
+
+.form-container .destination {
+  position: relative;
+}
+
+.form-container .origin {
+  position: relative;
+}
+
+.form-container .weight {
+  position: relative;
 }
 .form-container label {
+  flex: 1;
   position: absolute;
-  top: 28px;
+  top: -8px;
   background-color: #fff;
   font-size: 14px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   color: #979797;
   margin-left: 20px;
-  z-index: 100;
 }
 
 .form fieldset {
@@ -301,13 +320,12 @@ body {
   position: relative;
   top: -9px;
   border: none;
+  cursor: pointer;
+  text-wrap: nowrap;
+  flex: 1 1 calc(20% - 22px);
+  min-width: 120px;
 }
 
-@media (width <= 1452) {
-  .circle {
-    display: none;
-  }
-}
 @media (width <= 1305px) {
   .nav-links {
     display: none;
@@ -341,11 +359,23 @@ body {
 
 @media (width <= 768px) {
   .container-first-section {
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    text-align: center;
+    padding: 10vw;
+    margin: auto;
   }
-
   .dropdown_menu {
     left: 2rem;
     width: unset;
+  }
+
+  .container-first-section .girl-with-dron {
+    margin-top: 15vw;
+  }
+
+  .container-btns {
+    justify-content: center;
   }
 }
