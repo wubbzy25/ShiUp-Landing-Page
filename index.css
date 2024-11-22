@@ -478,6 +478,137 @@ body {
   gap: 50px;
 }
 
+/*THIRD SECTIONS*/
+.third-section-container {
+  position: relative;
+  width: 100%;
+  padding: 3rem 6rem;
+}
+
+.icon-wrapper2 {
+  justify-content: flex-start;
+  margin-top: 5rem;
+}
+
+.icon-wrapper2 .circle-background {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.title-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container h2 {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  margin-bottom: 7rem;
+}
+
+.title-container h2 strong {
+  font-weight: 700;
+  position: relative;
+}
+.title-container strong::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 5px;
+  width: 80%;
+  left: 0;
+  background-color: var(--simorange);
+}
+
+.circle-number {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #230b34;
+  position: relative;
+}
+
+.articles h2 {
+  color: var(--simorange);
+  font-size: 2.5rem;
+}
+
+.articles {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.circle-number p {
+  color: #fff;
+  position: absolute;
+  top: 9px;
+  left: 14px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+}
+
+.article-image-container {
+  flex: 1 1 50%;
+  width: 40vw;
+  max-width: 1000px;
+  min-width: 350px;
+}
+
+.article-image-container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.article-title-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.article-second {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1 1 50%;
+  gap: 20rem;
+}
+
+.arrows .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+
+.arrow-down .image-container {
+  display: flex;
+}
+
+@media (width >= 1450px) {
+  .articles h2 {
+    font-size: 3.5rem;
+  }
+  .articles .text {
+    font-size: 2rem;
+  }
+  .title-container h2 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+
 @media (width <= 1305px) {
   .nav-links {
     display: none;
@@ -557,8 +688,39 @@ body {
     margin-top: 4rem;
     margin-left: 2rem;
   }
+
+  .icon-wrapper2 {
+    margin-left: 10px;
+  }
+
+  .icon-wrapper2 .circle-background {
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
   .second-section .btns {
     padding-bottom: 20px;
     gap: 30px;
+  }
+
+  .third-section-container {
+    padding: 0;
+    margin: auto;
+  }
+  .articles {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-section {
+    padding-left: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .article-second {
+    gap: 0;
   }
 }
