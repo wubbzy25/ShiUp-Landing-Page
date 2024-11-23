@@ -651,6 +651,80 @@ body {
   padding-bottom: 3rem;
 }
 
+.footer-container {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  padding: 150px 50px;
+  background-color: var(--simblue);
+  flex: 1 1 50%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 168px;
+  color: #fff;
+}
+
+.footer-container .footer-title-container {
+  color: #fff;
+  width: 16rem;
+}
+
+.footer-container .footer-title-container h2 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-container .footer-title-container h2 span {
+  color: var(--simorange);
+  font-weight: 400;
+}
+
+.footer-container .footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-container .footer-list {
+  list-style: none;
+}
+
+.footer-container .footer-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-container h2 {
+  margin-bottom: 20px;
+}
+
+.footer-container .social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.footer-container .social-media .social-media-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 50%;
+}
+.footer-container .social-media li {
+  z-index: 1000;
+  position: absolute;
+  left: 8px;
+  top: 6px;
+}
+
+.footer-container .social-media li a i {
+  background: linear-gradient(to right, #2c2d5b, #9fa1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (width >= 1450px) {
   .articles h2 {
     font-size: 3.5rem;
