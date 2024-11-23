@@ -722,6 +722,11 @@ body {
   top: 6px;
 }
 
+.footer-container .explore-legal-container {
+  display: flex;
+  gap: 168px;
+}
+
 .footer-container .social-media li a i {
   background: linear-gradient(to right, #2c2d5b, #9fa1ff);
   -webkit-background-clip: text;
@@ -876,7 +881,6 @@ body {
     padding: 50px 24px;
   }
   .footer-container .explore-legal-container {
-    display: flex;
     flex-direction: row;
     gap: 60px;
   }
